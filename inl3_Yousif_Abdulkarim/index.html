@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulär</title>
+</head>
+
+<body>
+    <form action="http://webshare.mah.se/tszagh/response.php" method="GET">
+        <!-- Kontakt uppgifter -->
+        <fieldset>
+            <legend>
+                Kontaktuppgifter
+            </legend>
+
+            <label for="name">
+                Namn
+            </label>
+            <br>
+            <input required id="name" name="name" placeholder="Namn här">
+            <br>
+            <br>
+
+            <label for="age">
+                Ålder
+            </label>
+            <br>
+            <input required id="age" name="age" placeholder="Ålder här" type="number" min="1">
+        </fieldset>
+        <br>
+
+        <!-- Dina besök på blomstermålabladet -->
+        <fieldset>
+            <legend>
+                Dina besök på blomstermålabladet
+            </legend>
+
+            <!-- Hur ofta besöker du blomstermålabladet? -->
+            <p>
+                Hur ofta besöker du blomstermålabladet?
+            </p>
+            <input type="radio" id="each_day" name="freq" value="each_day">
+            <label for="each_day">
+                Varje dag
+            </label>
+            <br>
+
+            <input type="radio" id="every_other" name="freq" value="every_other">
+            <label for="every_other">
+                Varannan dag
+            </label>
+            <br>
+
+
+            <input type="radio" id="each_weak" name="freq" value="each_weak">
+            <label for="each_weak">
+                Varje vecka
+            </label>
+            <br>
+
+            <!-- Vilka delar av blomstermålabladet brukar du besöka? -->
+            <p>
+                Vilka delar av blomstermålabladet brukar du besöka?
+            </p>
+            <input type="checkbox" id="news" name="visits[]" value="news">
+            <label for="news">
+                Nyheter
+            </label>
+            <br>
+
+            <input type="checkbox" id="forgein" name="visits[]" value="forgein">
+            <label for="forgein">
+                Utrikes
+            </label>
+            <br>
+
+            <input type="checkbox" id="domestic" name="visits[]" value="domestic">
+            <label for="domestic">
+                Inrikes
+            </label>
+            <br>
+
+            <input type="checkbox" id="sport" name="visits[]" value="sport">
+            <label for="sport">
+                Sport
+            </label>
+            <br>
+
+            <input type="checkbox" id="gossip" name="visits[]" value="gossip">
+            <label for="gossip">
+                Skvaller
+            </label>
+            <br>
+
+
+            <input type="checkbox" id="weather" name="visits[]" value="weather">
+            <label for="weather">
+                Väder
+            </label>
+            <br>
+
+
+            <input type="checkbox" id="other" name="visits[]" value="other">
+            <label for="other">
+                Övrigt
+            </label>
+            <br>
+        </fieldset>
+        <br>
+
+        <!-- Vinn en T-shirt -->
+        <fieldset>
+            <legend>
+                Vinn en T-shirt
+            </legend>
+
+            <!-- Bästa med blomstermålabladet -->
+            <label for="best">
+                Bästa med blomstermålabladet:
+            </label>
+            <br>
+            <textarea id="best" name="best"></textarea>
+            <br>
+            <br>
+
+            <!-- Sämsta med blomstermålabladet -->
+            <label for="worst">
+                Sämsta med blomstermålabladet:
+            </label>
+            <br>
+            <textarea id="worst" name="worst"></textarea>
+            <br>
+            <br>
+
+
+            <!-- Email -->
+            <label for="email">
+                Email
+            </label>
+            <br>
+            <input type="email" id="email" name="email" placeholder="E-post här">
+            <br>
+            <br>
+
+
+            <!-- Storlek -->
+            <label for="size">
+                Storlek
+            </label>
+            <br>
+            <select id="size" name="size">
+                <option value="XS">
+                    XS
+                </option>
+                <option value="S">
+                    S
+                </option>
+                <option value="M" selected>
+                    M
+                </option>
+                <option value="L">
+                    L
+                </option>
+                <option value="XL">
+                    XL
+                </option>
+            </select>
+        </fieldset>
+        <br>
+
+        <!-- Skicka/Återställ -->
+        <fieldset>
+            <legend>
+                Skicka/Återställ
+            </legend>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+
+</html>
