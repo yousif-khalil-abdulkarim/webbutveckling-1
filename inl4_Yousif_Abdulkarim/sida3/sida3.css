@@ -1,0 +1,52 @@
+body {
+    background-color: aqua;
+}
+
+h1 {
+    text-align: center;
+}
+
+.text1 {
+    background-color: greenyellow;
+    padding: 8px;
+    border-style: solid;
+    border-width: 8px;
+    border-color: white;
+}
+
+ul {
+    font-style: italic;
+}
+
+.text2 {
+    background-color: yellow;
+    padding: 8px;
+    border-style: solid;
+    border-width: 8px;
+    border-color: black;
+}
+
+table {
+    width: 100%;
+    outline-style: solid;
+    outline-offset: 1px;
+    outline-width: 2px;
+    outline-color: black;
+}
+th {
+    background-color: blue;
+    color: white;
+}
+td {
+    text-align: center;
+    background-color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+.text3 {
+    font-style: italic;
+    font-weight: bolder;
+}

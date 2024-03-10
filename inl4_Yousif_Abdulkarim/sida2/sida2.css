@@ -1,0 +1,13 @@
+body {
+  background-color: gainsboro;
+}
+.question {
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 22px;
+}
+.answer {
+  text-decoration: underline dotted;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
